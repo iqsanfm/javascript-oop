@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Instanceof</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+      class Manager extends Employee {}
+
+      const iqsan = new Employee();
+      const budi = new Manager();
+
+      console.log(typeof iqsan);
+      console.log(typeof budi);
+
+      console.log(iqsan instanceof Employee); // Trueobject
+      console.log(iqsan instanceof Manager); // False
+
+      console.log(budi instanceof Employee); // False , if True because manager extends from employee
+      console.log(budi instanceof Manager); // True
+    </script>
+  </body>
+</html>

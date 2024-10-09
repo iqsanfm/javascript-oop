@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class : Public field</title>
+  </head>
+  <body>
+    <script>
+      class Customer {
+        firstName;
+        lastName;
+        balance = 0;
+        constructor(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+        }
+        sayHello() {}
+      }
+
+      const iqsan = new Customer("Iqsan", "Faisal");
+      console.log(iqsan);
+    </script>
+  </body>
+</html>

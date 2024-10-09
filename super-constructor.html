@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super constructor</title>
+  </head>
+  <body>
+    <script>
+      class Employee {
+        constructor(firstName) {
+          this.firstName = firstName;
+        }
+        sayHello(name) {
+          console.log(`Hello ${name}, my name is Employee ${this.firstName}`);
+        }
+      }
+
+      class Manager extends Employee {
+        constructor(firstName, lastName) {
+          super(firstName);
+          this.lastName = lastName;
+        }
+        sayHello(name) {
+          console.log(
+            `Hello ${name}, my name is Manager ${this.firstName} ${this.lastName}`
+          );
+        }
+      }
+
+      const iqsan = new Employee("Iqsan");
+      iqsan.sayHello("Budi");
+
+      const budi = new Manager("Budi", "Nugraha");
+      budi.sayHello("Iqsan");
+    </script>
+  </body>
+</html>
