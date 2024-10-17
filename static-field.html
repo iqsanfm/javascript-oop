@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Field</title>
+  </head>
+  <body>
+    <script>
+      class Configuration {
+        static name = "STATIC FIELD";
+        static version = 1.0;
+        static author = "Iqsan Faisal";
+      }
+
+      const config = new Configuration();
+      console.log(Configuration.name);
+      console.log(Configuration.author);
+      console.log(Configuration.version);
+    </script>
+  </body>
+</html>
